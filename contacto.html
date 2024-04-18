@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <a href="Web.html">Volver al inicio</a></li>
+    </ul>
+  </nav>
+  <img src="Imagenes\NuevoLogo.png" alt="Logo" class="logo">
+<h1>Contacta con nosotros</h1>
+  <div class="contenedor_form">
+    <div class="form">
+        <h2>Contrata nuestros servicios</h2>
+        <form action="envio.php" class="bordillo" method="post">
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required><br><br><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br><br>
+    
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br><br>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br><br>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required><br><br><br>
+    
+            <label for="direccion" class="direct">Dirección</label>
+            <textarea id="direccion" name="direccion" rows="2" cols="30" required></textarea><br><br><br>
+    
+            <input type="submit" value="Contratar">
+        </form>
+    </div>
+    <div class="contacto">
+      <div class="informacion-contacto">
+          <h2>Datos de Contacto</h2>
+          <div class="zona1">
+              <div class="correo">
+                  <img src="Imagenes/email.png" class="E-mail">
+                  <p>ejemplo@example.com</p>
+              </div>
+              <div class="telefono">
+                  <img src="Imagenes/telefono.png" class="telefono">
+                  <p>+123456789</p>
+              </div>
+          </div>
+          <div class="redes-sociales">
+              <p class="RSociales"><strong>Redes Sociales:</strong></p>
+              <div class="Twitter">
+                  <a href="proximo.html"><img src="Imagenes/twitter.png" class="twit"></a>
+                  <p><a href="proximo.html">@ejemplo</a></p>
+              </div>
+              <div class="link">
+                  <a href="proximo.html"><img src="Imagenes/ln.png" class="ln"></a>
+                  <p><a href="proximo.html">/ejemplo</a></p>
+              </div>
+              <div class="insta">
+                  <a href="https://www.edu.xunta.gal/centros/cifprodolfouchapineiro/aulavirtual/course/view.php?id=173"><img src="Imagenes/Instagram.png" class="inst"></a>
+                  <p><a href="#">@ejemplo</a></p>
+              </div>
+              <div class="face">
+                <a href="proximo.html"><img src="Imagenes/face.png" class="fb"></a>
+                <p><a href="proximo.html">/ejemplo</a></p>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

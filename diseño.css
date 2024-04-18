@@ -1,0 +1,380 @@
+  body {
+    background-color: #121212;
+    color: #3DEA18;
+    font-family: Arial;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #26e4e9;
+    font-size: 40px;
+  }
+
+  h3 {
+    color: #26e4e9;
+    font-size: 22px;
+    text-align: center;
+  }
+
+.logo {
+    position: fixed;
+    top: -30px;
+    right: -10px;
+    z-index: 4;
+  }
+.fondo {
+    text-align: center;
+    width: 100%; /* Ancho máximo del contenedor */
+}
+.fondo img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+nav {
+    position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #121212; /* Color de fondo de la barra de navegación */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 1;
+}
+
+nav a {
+    color: #3DEA18; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-right: 20px; /* Espaciado entre los enlaces */
+}
+.titulo {
+    position: relative; /* Establece posición relativa para el contenedor */
+    display: inline-block; /* Hace que el contenedor ajuste su tamaño al contenido */
+}
+
+.texto-superpuesto {
+    position: absolute; /* Establece posición absoluta para el texto */
+    top: 5%; /* Posiciona el texto en la mitad superior del contenedor */
+    left: 50%; /* Posiciona el texto en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto exactamente */
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #3DEA18; /* Color del texto */
+}
+
+.texto-superpuesto h1 {
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    margin-top: 300px; /* Espacio superior */
+    text-align: center;
+    background-color: #121212; /* Color de fondo negro */
+    padding: 0px 3px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 74px; /* Tamaño de letra grande */
+    font-weight: bold; /* Texto en negrita */
+    
+}
+
+.texto-superpuesto p {
+    margin: 0px 0px; /* Añade un pequeño margen superior e inferior al párrafo */
+    background-color: #121212; /* Color de fondo negro */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.ser {
+    display: flex; /* Utiliza flexbox para crear un diseño flexible */
+    background-image: linear-gradient(to bottom, #05040a , #05040b); /* Degradado de amarillo a naranja hacia abajo */
+    text-align: center;
+    border-style: solid;
+    border-image: linear-gradient(to right, #26e4e9, #3DEA18) 1;
+}
+
+.ser .parte1{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    
+}
+
+.ser .parte2{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+}
+
+.ser .parte1 img {
+    z-index: -2;
+}
+
+.ser .parte1 p {
+    transform: translate(0%, 20%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    z-index: 2;
+    font-size: 20px;
+    
+}
+
+.ser .parte2 img {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+}
+
+.anteshacer {
+    background-image: linear-gradient(to bottom, #05040a, #05040b); /* Degradado de amarillo a naranja hacia abajo */
+}
+
+.anteshacer p {
+    margin: 10px 0px; /* Añade un pequeño margen superior e inferior al párrafo */
+    font-size: 20px;
+    
+}
+
+.hacer {
+    display: flex; /* Utiliza flexbox para crear un diseño flexible */
+    text-align: center;
+    background-image: linear-gradient(to bottom, #05040a, #05040b); /* Degradado de amarillo a naranja hacia abajo */
+    border-style: solid;
+    border-image: linear-gradient(to right, #3DEA18, #26e4e9) 1;
+}
+
+.hacer .parte1{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    
+}
+
+.hacer .parte2{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+}
+
+.hacer .parte1 img {
+    margin-top: 20px;
+
+}
+.hacer .parte2 li {
+    color: #3DEA18; /* Color del texto */
+    line-height: 3.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    font-size: 20px;   
+}
+
+.antesconfia p {
+    font-size: 20px;
+}
+
+.confia1 {
+    display: flex; /* Utiliza flexbox para crear un diseño flexible */
+    background-image: linear-gradient(to bottom, #05040a, #05040b); /* Degradado de amarillo a naranja hacia abajo */
+    text-align: center;
+}
+.confia1 .parte1{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    border-style: solid;
+    border-image: linear-gradient(to right, #3DEA18, #26e4e9) 1;
+}
+
+.confia1 .parte2{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    border-style: solid;
+    border-image: linear-gradient(to right, #26e4e9, #3DEA18) 1;
+}
+
+.confia1 .parte1 img {
+    z-index: -2;
+    margin-top: 40px;
+}
+
+.confia1 .parte1 p {
+    transform: translate(0%, 20%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    z-index: 2;
+    font-size: 20px;
+    
+}
+
+.confia1 .parte2 img {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    margin-top: 17px;
+}
+
+.confia1 .parte2 p {
+    transform: translate(0%, 10%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    font-size: 20px;
+}
+
+.confia2 {
+    display: flex; /* Utiliza flexbox para crear un diseño flexible */
+    background-image: linear-gradient(to bottom, #05040a, #05040b); /* Degradado de amarillo a naranja hacia abajo */
+    text-align: center;
+}
+.confia2 .parte1{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    border-style: solid;
+    border-image: linear-gradient(to right, #3DEA18, #26e4e9) 1;
+}
+
+.confia2 .parte2{
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    border-style: solid;
+    border-image: linear-gradient(to right, #26e4e9, #3DEA18) 1;
+}
+
+.confia2 .parte1 img {
+    z-index: -2;
+    margin-top: 30px;
+}
+
+.confia2 .parte1 p {
+    transform: translate(0%, 20%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    z-index: 2;
+    font-size: 20px;
+    
+}
+
+.confia2 .parte2 img {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    margin-top: 30px;
+}
+
+.confia2 .parte2 p {
+    transform: translate(0%, 10%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    font-size: 20px;
+}
+.confia3 {
+    display: flex; /* Utiliza flexbox para crear un diseño flexible */
+    background-image: linear-gradient(to bottom, #05040a, #05040b); /* Degradado de amarillo a naranja hacia abajo */
+    text-align: center;
+}
+
+.confia3 .parte1 {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    border-style: solid;
+    border-image: linear-gradient(to right, #3DEA18, #26e4e9) 1;   
+}
+
+.confia3 .parte2 {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    border-style: solid;
+    border-image: linear-gradient(to right, #26e4e9, #3DEA18) 1;
+}
+
+.confia3 .parte1 img {
+    z-index: -2;
+    margin-top: 20px;
+}
+
+.confia3 .parte1 p {
+    transform: translate(0%, 20%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    z-index: 2;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.confia3 .parte2 img {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    margin-top: 30px;
+}
+
+.confia3 .parte2 p {
+    transform: translate(0%, 10%); /* Centra el texto exactamente */
+    line-height: 2.5; /* Entrelineado de 1.5 veces el tamaño de la fuente */
+    font-size: 20px;
+    margin-top: 26px;
+}
+
+.final {
+    text-align: center;
+}
+
+.contenedor_form {
+    display: flex; /* Utiliza flexbox para crear un diseño flexible */
+}
+
+.form {
+    flex: 1;
+    padding: 20px; /* Espaciado interno */
+    text-align: left;
+    background-color: #05040a;
+}
+
+.form .bordillo {
+    padding: 20px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #26e4e9, #3DEA18) 1;
+}
+
+.direct {
+    display: block;
+}
+
+.contacto {
+    flex: 1;
+    background-image: linear-gradient(to bottom, #05040a, #05040b); /* Degradado de amarillo a naranja hacia abajo */
+}
+
+.informacion-contacto {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+}
+
+.informacion-contacto h2 {
+    color: #26e4e9; /* Color del texto */
+}
+
+.zona1 {
+    display: flex;
+    flex-direction: row; /* Organiza los elementos en fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.zona1 > div {
+    margin-right: 60px; /* Espacio entre los elementos */
+    margin-left: 60px; /* Espacio entre los elementos */
+}
+
+.zona1 p {
+    text-align: center;
+}
+
+.redes-sociales {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.RSociales {
+    color: #26e4e9; /* Color del texto */
+    font-size: 22px;
+}
+
+.Twitter,
+.link,
+.insta,
+.face {
+    margin-top: 20px; /* Espacio superior entre las redes sociales */
+}
+
+.Twitter,
+.link,
+.insta,
+.face img {
+    display: inline-block; /* Alinea la imagen y el texto en línea */
+    vertical-align: middle; /* Alinea verticalmente la imagen y el texto */
+    margin-right: 50px; /* Espacio entre la imagen y el texto */
+}
+
+.Twitter img {
+    margin-bottom: 15px;
+}
+
+.Twitter p {
+    margin-top: -10px;
+}
+
+.insta img {
+    margin-right: -20px;
+}
+
+.link img {
+    margin-top: 3px;
+}
+
+.face img {
+    margin-left: 60px;
+}
